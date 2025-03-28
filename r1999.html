@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse: 1999 - Review</title>
+    <link rel="stylesheet" type="text/css" href="stylesz.css"/>
+    <style>
+        
+    </style>
+    <script>
+        function navigatePage(page) {
+            let pageURLs = {
+                "Home": "Game Review.html",
+                "Socials": "#socials-section",
+                "About": "About.html"
+            };
+
+            if (pageURLs[page]) {
+                if (page === "#socials-section"){
+                    window.location.href = pageURLs[page];
+                } else {
+                    window.location.href = pageURLs[page];
+                }
+
+            } else {
+                alert("Page not available.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Cir Pink's</h1>
+        <p>Your Ultimate Game Review Hub</p>
+    </header>
+    <nav>
+        <ul>
+            <a href="#" onclick="navigatePage('Home')">Home</a>
+            <a href="#socials-section" onclick="navigatePage('Socials')">Socials</a>
+            <a href="#" onclick="navigatePage('About')">About</a>
+        </ul>
+    </nav>
+    <div class="review-content">
+        <h1>Reverse: 1999</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NAZyj0b_JKY?si=WphYYuFW3BUkOYXj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <h2>Description</h2>
+        <p>Reverse: 1999 is a time-traveling strategic RPG featuring stylish 20th-century aesthetics. Players control Arcanists, individuals with magical abilities, as they navigate a mysterious temporal storm.</p>
+        <h2>Story</h2>
+        <p>The story centers around a phenomenon called the "Storm," which reverses time at the end of each year. Players take on the role of Vertin, the Timekeeper, who is immune to the Storm's effects. Vertin must travel through different eras, recruit Arcanists, and uncover the secrets behind the Storm to prevent the complete erasure of history.</p>
+        <h2>Review</h2>
+        <p><strong>Rating:</strong> <span class="rating">★★★★★</span></p>
+        <a href="https://re1999.bluepoch.com/" class="play-button">Play the Game</a>
+        <br></br>
+        <div class="review-comments">
+            <h3>User Comments:</h3>
+            <div class="review-comment">
+                <p>"Stylish art and a time-bending story that captivates."</p>
+                <p> - User1</p>
+            </div>
+            <div class="review-comment">
+                <p>"Deep strategy and rewarding tactical gameplay."</p>
+                <p> - User2</p>
+            </div>
+            <div class="review-comment">
+                <p>"Memorable characters and a rich, immersive world."</p>
+                <p> - User3</p>
+            </div>
+        </div>
+    </div>
+    <footer id="socials-section">
+        <p>Connect with Us:</p>
+        <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+        <p>&copy; 2025 Cir Pink's. All rights reserved.</p>
+    </footer>
+</body>
+</html>
